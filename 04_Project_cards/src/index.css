@@ -11,9 +11,14 @@ body{
 }
 
 .parent{
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   background-color: black;
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .card{
@@ -21,7 +26,12 @@ body{
   width: 300px;
   background-color: rgb(233, 231, 229);
   border-radius: 30px;
-  padding: 40px;
+  margin: 10px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  gap: 30px;
 }
 
 .card .top{
@@ -31,22 +41,61 @@ body{
 }
 
 .top img{
-  height: 30px;
-  width: 35px;
+  height: 45px;
+  width: 45px;
   border-radius: 50%;
-  border: 1px solid white;
+  border: 1px solid transparent;
+  box-shadow: 5px 5px 5px black;
 }
 
 .top button{
   display: flex;
   align-items: center;
-  border: 1px solid white;
+  border: 1px solid rgb(0, 0, 0);
   padding: 4px 8px;
   font-size: 11px;
   border-radius: 5px;
   gap: 3px;
   background-color: transparent;
-  color: beige;
+  color: rgb(3, 3, 0);
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+.top button:hover{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  box-shadow: 10px 10px 10px black;
+}
+
+.center h3{
+  font-size: 18px;
+  font-weight: 500;
+}
+.center h3 span{
+  font-size: 10px;
+  font-weight: 400;
+  color: #7f7f7f;
+}
+
+.center h2{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.center .tag{
+  display: flex;
+  gap: 5px;
+}
+
+.center .tag h4{
+  font-size: 12px;
+  font-weight: 500;
+  color: #121111;
+  background-color: gray;
+  border: 1px solid #b1b1b1;
+  margin: 2px;
+  padding: 3px 10px;
+  border-radius: 5px;
 }
 
 .bottom{
@@ -54,5 +103,21 @@ body{
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid #b1b1b1;
-  padding: 10px 0;
+}
+.bottom button{
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 4px 8px;
+  font-size: 11px;
+  border-radius: 5px;
+  gap: 3px;
+  background-color: transparent;
+  color: rgb(3, 3, 0);
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+.bottom button:hover{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  box-shadow: 10px 10px 10px black;
 }
